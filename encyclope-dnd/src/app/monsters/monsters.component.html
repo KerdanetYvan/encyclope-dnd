@@ -1,0 +1,18 @@
+<div>
+  <h1>Monsters</h1>
+  <div id="gros_bloc">
+    <div id="allMonsters">
+      <div *ngFor="let monster of AllMonsters; index as i" class="bloc_monstre">
+        <a href="#"><h2 class="monstre">{{monster.name}}</h2></a>
+      </div>
+    </div>
+    <mat-form-field class="Input_search">
+      <input matInput type="text" id="searchInput" [(ngModel)]="value" (input)="searchMonster()">
+      @if (value) {
+        <button matSuffix mat-icon-button aria-label="Search" (click)="value=''">
+          <mat-icon>close</mat-icon>
+        </button>
+      }
+    </mat-form-field>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div>
+  <h1>Ability Scores</h1>
+  <div id="bloc_text" *ngFor="let item of abilities; index as i">
+    <h2>{{ item.full_name }}</h2>
+    <p>{{ item.desc }}</p>
+
+    <div id="ndbloc_text" *ngFor="let skill of item.skills; index as i">
+      <h3>{{ skill.name }}</h3>
+      <p>{{ skill.desc }}</p>
+    </div>
+  </div>
+</div>

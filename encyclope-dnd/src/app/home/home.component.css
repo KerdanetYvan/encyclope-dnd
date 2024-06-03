@@ -1,0 +1,32 @@
+#frst_p h1 {
+  font-size: 40px;
+  font-family: Jazz LET, fantasy;
+  color: saddlebrown;
+  margin-top: 3%;
+  margin-left: 10%;
+  padding: 1%;
+  border-radius: 4px 0 0 4px;
+  border-left: 3px solid saddlebrown;
+  border-top: 3px solid saddlebrown;
+  border-bottom: 3px solid saddlebrown;
+  background-color: bisque;
+}
+
+#frst_bloc {
+  margin: 20px;
+  display: flex;
+}
+
+#frst_bloc img {
+  max-width: 10%;
+}
+
+#ps {
+  background-color: rgba(250, 235, 215, 75%);
+  padding: 2px;
+}
+
+#ps p {
+  padding: 0;
+  margin: 5px;
+}

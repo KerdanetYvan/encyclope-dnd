@@ -1,0 +1,64 @@
+.navbar-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-drawer-container {
+  background-color: transparent;
+  flex: 1 0 auto;
+
+}
+
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  padding: 20px;
+  background-color: burlywood;
+}
+
+.example-sidenav button {
+  font-family: fantasy;
+  margin: 1px;
+  font-size: 20px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+#bar_menu {
+  background-color: burlywood;
+  border-bottom: 2px solid saddlebrown;
+}
+
+#EncyclopeDnD a {
+  text-decoration: none;
+  font-family: fantasy;
+  color: burlywood;
+  display: flex;
+  max-height: 31px;
+}
+
+#EncyclopeDnD {
+  background-color: saddlebrown;
+  padding: 0.5%;
+  border-radius: 0 16px 0 6px;
+}
+
+#EncyclopeDnD img {
+  max-width: 27px;
+  max-height: 27px;
+  padding-top: 5px;
+  padding-bottom: 0;
+}
+
+.main-content {
+  padding-top: 16px;
+}

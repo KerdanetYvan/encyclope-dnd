@@ -1,0 +1,43 @@
+<div>
+  <h1>Spells</h1>
+  <div id="bloc_text" *ngFor="let spell of allSpells; index as i">
+    <h2>{{ spell.name }}</h2>
+    <div *ngFor="let descrip of spell.desc; index as i">
+      <p>{{ descrip }}</p>
+    </div>
+    <div *ngIf="spell.higher_level != []">
+      <p>{{ spell.higher_level }}</p>
+    </div>
+
+    <div id="scnd_part">
+      <div id="tag">
+        <div class="taglist" *ngIf="spell.ritual">Ritual</div>
+        <div class="taglist" *ngIf="spell.concentration">Concentration</div>
+        <div class="taglist" *ngFor="let component of spell.components; index as i">{{ component }}</div>
+        <div class="taglist">Range : {{ spell.range }}</div>
+        <div class="taglist">Duration : {{ spell.duration }}</div>
+        <div class="taglist">Level : {{ spell.level }}</div>
+      </div>
+
+      <div id="caract">
+        <div *ngIf="spell.material != null">
+          <h3>Material :</h3>
+          <p>{{ spell.material }}</p>
+        </div>
+
+        <div *ngIf="spell.nameSchool != ''">
+          <h3>School :</h3>
+          <p>{{ spell.nameSchool }}</p>
+        </div>
+
+        <h3>Classes :</h3>
+        <ul>
+          <div *ngFor="let class of spell.nameClasses; index as i"><li>
+            {{ class }}
+          </li></div>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</div>>

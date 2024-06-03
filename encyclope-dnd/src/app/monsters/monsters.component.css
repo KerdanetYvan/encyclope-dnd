@@ -1,0 +1,42 @@
+h1 {
+  font-size: 40px;
+  font-family: Jazz LET, fantasy;
+  color: saddlebrown;
+  margin-top: 3%;
+  margin-left: 10%;
+  padding: 1%;
+  border-radius: 4px 0 0 4px;
+  border-left: 3px solid saddlebrown;
+  border-top: 3px solid saddlebrown;
+  border-bottom: 3px solid saddlebrown;
+  background-color: bisque;
+}
+
+#gros_bloc {
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bloc_monstre {
+  background-color: rgba(250, 235, 215, 75%);
+  border-radius: 6px;
+  max-width: 350px;
+}
+
+.bloc_monstre h2 {
+  font-family: fantasy;
+  font-size: 25px;
+  color: saddlebrown;
+  padding: 0.5%;
+}
+
+.bloc_monstre a {
+  text-decoration: none;
+}
+
+.Input_search {
+  width: 200px;
+  height: 80px;
+  margin-right: 20px;
+}

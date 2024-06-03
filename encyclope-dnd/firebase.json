@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "encyclope-dnd",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+<div>
+  <h1>Rules</h1>
+  <div id="bloc_text" *ngFor="let item of rules">
+    <h2>{{ item.name }}</h2>
+    <div id="ndbloc_text" *ngFor="let item2 of item.subsections">
+      <h3>{{ item2.name }}</h3>
+      <p>{{ item2.desc }}</p>
+    </div>
+  </div>
+</div>

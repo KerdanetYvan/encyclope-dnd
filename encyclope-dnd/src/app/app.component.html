@@ -1,0 +1,50 @@
+<div class="main">
+    <mat-toolbar id="bar_menu">
+        <button mat-icon-button (click)="drawer.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <div id="EncyclopeDnD"><a routerLink=""><p>Encyclope'</p><img src="assets/encyclopednd.png" alt="Logo"></a></div>
+        <span class="navbar-spacer"></span>
+        <!--
+    <button mat-icon-button>
+        <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button>
+        <mat-icon>share</mat-icon>
+    </button>-->
+
+        <button mat-button [matMenuTriggerFor]="menu">Connexion</button>
+        <mat-menu #menu="matMenu" class="example-icon">
+            <button mat-menu-item routerLink="/login">
+                <mat-icon>login</mat-icon> Login
+            </button>
+            <button mat-menu-item routerLink="/signup">
+                Signup
+            </button>
+        </mat-menu>
+    </mat-toolbar>
+
+    <mat-drawer-container class="drawer-container">
+        <mat-drawer #drawer class="example-sidenav" mode="over">
+            <button mat-menu-item [matMenuTriggerFor]="rules">Rules</button>
+            <mat-menu #rules="matMenu" class="rules-icon">
+              <button mat-menu-item routerLink="rules/ability_scores">Ability scores</button>
+              <button mat-menu-item routerLink="rules/alignments">Alignments</button>
+              <button mat-menu-item routerLink="rules/conditions">Conditions</button>
+              <button mat-menu-item routerLink="rules/damage-types">Damage Types</button>
+              <button mat-menu-item routerLink="rules/magic-schools">Magic Schools</button>
+              <button mat-menu-item routerLink="rules/rules">Rules</button>
+              <button mat-menu-item routerLink="rules/weapon-properties">Weapon Properties</button>
+              <button mat-menu-item routerLink="rules/skills">Skills</button>
+            </mat-menu>
+            <button mat-menu-item routerLink="monsters">Monsters</button>
+            <button mat-menu-item routerLink="spells">Spells</button>
+        </mat-drawer>
+
+        <div class="main-content">
+            <router-outlet />
+        </div>
+
+    </mat-drawer-container>
+
+</div>

@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "angular": "^1.6.10",
+    "document": "^0.0.0"
+  },
+  "devDependencies": {
+    "@angular/core": "^17.3.2",
+    "@types/jest": "^29.5.12"
+  }
+}

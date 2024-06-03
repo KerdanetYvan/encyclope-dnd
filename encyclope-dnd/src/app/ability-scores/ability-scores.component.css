@@ -1,0 +1,40 @@
+h1 {
+  font-size: 40px;
+  font-family: Jazz LET, fantasy;
+  color: saddlebrown;
+  margin-top: 3%;
+  margin-left: 10%;
+  padding: 1%;
+  border-radius: 4px 0 0 4px;
+  border-left: 3px solid saddlebrown;
+  border-top: 3px solid saddlebrown;
+  border-bottom: 3px solid saddlebrown;
+  background-color: bisque;
+}
+
+#bloc_text {
+  background-color: rgba(250, 235, 215, 75%);
+  margin: 1%;
+  padding: 1%;
+  border-radius: 6px;
+}
+
+#bloc_text h2 {
+  font-family: fantasy;
+  font-size: 25px;
+  color: saddlebrown;
+}
+
+#bloc_text p {
+  padding-left: 1%;
+}
+
+#ndbloc_text h3 {
+  padding-left: 2%;
+  font-family: Georgia, serif;
+  font-weight: bold;
+}
+
+#ndbloc_text p {
+  padding-left: 3%;
+}
